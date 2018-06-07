@@ -1,0 +1,17 @@
+#!/bin/bash
+
+######################
+# Permissions | Development
+######################
+
+# Dedicated Server
+find app/code var vendor pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type f -or -type d \) -exec chmod u-w {} \; && chmod o-rwx app/etc/env.php && chmod u+x bin/magento
+chmod -R u+w .
+echo 022 > magento-unmask
+echo "Permissions | Production for Dedicated Server Done..."
+
+
+# Shared Hosting
+#find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} \; && chmod o-rwx app/etc/env.php
+#find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} \; && chmod o+rwx app/etc/env.php
+echo "Permissions | Production for Shared Hosting Done..."
