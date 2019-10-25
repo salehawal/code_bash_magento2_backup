@@ -1,8 +1,0 @@
-#!/bin/bash
-
-######################
-# Permissions | Development
-######################
-find . -type f -exec chmod 644 {} \;
-find . -type d -exec chmod 755 {} \;
-echo "Permissions | Reset Done..."

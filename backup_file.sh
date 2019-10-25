@@ -10,6 +10,6 @@ tar --exclude='*.tar' --exclude='*.tar.bz2' --exclude='*.zip' -cvjsf $files_back
 # remove old backups
 find $files_backup_to -name ${files_export_file}_* -type f -mmin +7200 -delete
 # send notification email
-wget -qo- "https://jomlah.com/email.php?subject=file&email[]=saleh.awal@gmail.com&email[]=admin@jomlah.com" &> /dev/null
+# wget -qo- "https://jomlah.com/email.php?subject=file&email[]=saleh.awal@gmail.com&email[]=admin@jomlah.com" &> /dev/null
 #script end
 echo "backup | file done..."

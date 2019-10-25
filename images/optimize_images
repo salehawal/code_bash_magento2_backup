@@ -1,3 +1,0 @@
-#!/bin/bash
-LOCATION="/home/saleh/Desktop/pngtest/"
-find $LOCATION -type f \( -iname '*.png' -o -iname '*.jpg' \) -exec ect -8 -s '{}' \;

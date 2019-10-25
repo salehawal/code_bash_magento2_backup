@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# database backup
+database_backup_to="/home/master/backup/db/"
+database_name="rzmwqvsukr"
+database_user="rzmwqvsukr"
+database_pass="5Cp6dCPhMJ"
+database_export_file="db_backup"
+# files backup
+files_backup_from="/var/www/"
+files_backup_to="/home/master/backup/file"
+files_export_file="app_backup"

@@ -10,6 +10,6 @@ mysqldump --add-drop-table --force --opt --user=$database_user --password=$datab
 # remove old backups
 find $backup_to -name ${database_export_file}_* -type f -mmin +7200 -delete
 # send notification email
-wget -qo- "https://jomlah.com/email.php?subject=database&email[]=saleh.awal@gmail.com&email[]=admin@jomlah.com" &> /dev/null
+# wget -qo- "https://jomlah.com/email.php?subject=database&email[]=saleh.awal@gmail.com&email[]=admin@jomlah.com" &> /dev/null
 #script end
 echo "backup | database done..."

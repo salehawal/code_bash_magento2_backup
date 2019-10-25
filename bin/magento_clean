@@ -1,9 +1,0 @@
-#!/bin/bash
-
-######################
-# Clean
-######################
-
-rm -R pub/static/* var/cache/* var/page_cache/* var/composer_home/cache/* pub/media/catalog/product/cache/*
-
-echo "Clean Done..."
