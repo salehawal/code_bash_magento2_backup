@@ -6,7 +6,7 @@
 ######################
 
 # backup database
-mysqldump --add-drop-table --force --opt $database_name > ${database_backup_to}/${database_export_file}_`date +%y%m%d`.sql
+mysqldump --add-drop-table --force --opt $database_name > ${database_backup_to}/${database_export_file}_`date +%y-%m-%d_%H-%M`.sql
 # remove old backups
 find $backup_to -name ${database_export_file}_* -type f -mmin +7200 -delete
 # send notification email
